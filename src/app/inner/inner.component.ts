@@ -4,7 +4,11 @@ import {OuterService} from '../outer.service';
 @Component({
   selector: 'app-inner',
   template: `
-    <button (click)="changeOuterData()">Inner Button: change data in OuterService... is it reactive?</button>
+    <div style="background-color: lightpink; padding: 1rem;">
+      <button (click)="changeOuterData()" style="padding: 10px; font-size: 18px">Inner Button: change data in OuterService... is it
+        reactive?
+      </button>
+    </div>
   `,
   styleUrls: ['./inner.component.css']
 })
